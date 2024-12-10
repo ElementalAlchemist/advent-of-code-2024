@@ -62,6 +62,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 			*file_start = *free_space_start;
 			*free_space_size = remaining_free_space_size;
 			*free_space_start += *file_size;
+			break;
 		}
 	}
 
